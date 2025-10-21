@@ -2,28 +2,27 @@
 Автоматизированный поток обучения с cron триггером.
 """
 
-import sys
 import os
-
+import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from prefect import flow
-from data_tasks import (
-    load_params,
-    get_raw_data,
-    prepare_batch,
-    merge_batches,
-    preprocess_data,
-    create_dvc_tracking_file,
-)
-from model_tasks import train_model, evaluate_model
 from batch_manager import (
+    check_data_availability,
+    check_max_batches_reached,
     get_next_batch_number,
     update_batch_state,
-    check_max_batches_reached,
-    check_data_availability,
 )
+from data_tasks import (
+    create_dvc_tracking_file,
+    get_raw_data,
+    load_params,
+    merge_batches,
+    prepare_batch,
+    preprocess_data,
+)
+from model_tasks import evaluate_model, train_model
+from prefect import flow
 
 
 @flow(name="Automated ML Pipeline", log_prints=True)

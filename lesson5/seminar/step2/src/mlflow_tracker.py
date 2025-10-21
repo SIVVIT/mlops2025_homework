@@ -1,9 +1,10 @@
 """MLflow integration for experiment tracking."""
 
 import logging
+from typing import Any, Dict, Optional
+
 import mlflow
 import mlflow.catboost
-from typing import Dict, Any, Optional
 
 logger = logging.getLogger(__name__)
 

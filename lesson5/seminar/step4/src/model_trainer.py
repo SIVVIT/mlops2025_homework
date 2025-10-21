@@ -3,11 +3,11 @@
 import json
 import logging
 from pathlib import Path
-from typing import Dict, Any
+from typing import Any, Dict
 
 import numpy as np
 from catboost import CatBoostClassifier
-from sklearn.metrics import accuracy_score, f1_score, classification_report
+from sklearn.metrics import accuracy_score, classification_report, f1_score
 
 logger = logging.getLogger(__name__)
 

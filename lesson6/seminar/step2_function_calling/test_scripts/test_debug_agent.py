@@ -1,7 +1,7 @@
 """Debug agent test"""
 
-import sys
 import json
+import sys
 
 sys.path.insert(0, ".")
 

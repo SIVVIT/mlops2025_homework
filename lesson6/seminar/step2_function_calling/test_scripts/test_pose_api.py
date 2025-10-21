@@ -1,8 +1,9 @@
 """Тест Pose API без vLLM"""
 
 import base64
-import requests
 from pathlib import Path
+
+import requests
 
 
 def save_image(image_base64: str, filename: str):

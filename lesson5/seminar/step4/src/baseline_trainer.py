@@ -1,12 +1,13 @@
 """Baseline trainer for full dataset comparison."""
 
-import numpy as np
-from catboost import CatBoostClassifier
-from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
-from typing import Dict, Any
 import logging
 import os
 import pickle
+from typing import Any, Dict
+
+import numpy as np
+from catboost import CatBoostClassifier
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 
 logger = logging.getLogger(__name__)
 

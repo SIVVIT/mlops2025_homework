@@ -1,5 +1,6 @@
-from src.batch_optimizer import BatchOptimizer
 import os
+
+from src.batch_optimizer import BatchOptimizer
 
 
 def main():

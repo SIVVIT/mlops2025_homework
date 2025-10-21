@@ -5,9 +5,10 @@
 import json
 import pickle
 import sys
+
 import pandas as pd
 import yaml
-from sklearn.metrics import accuracy_score, f1_score, classification_report
+from sklearn.metrics import accuracy_score, classification_report, f1_score
 from sklearn.model_selection import train_test_split
 
 

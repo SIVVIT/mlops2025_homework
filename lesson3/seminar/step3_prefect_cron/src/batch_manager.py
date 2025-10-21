@@ -2,10 +2,11 @@
 Управление батчами для автоматического пайплайна.
 """
 
-import os
 import json
+import os
+from typing import Any, Dict
+
 import pandas as pd
-from typing import Dict, Any
 from prefect import task
 
 

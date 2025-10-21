@@ -1,5 +1,6 @@
 import json
 from typing import Any, Dict, List
+
 import requests
 from openai import OpenAI
 
@@ -87,6 +88,7 @@ JUMP: [{"Torso":[0,0],"Head":[0,60],"RH":[25,35],"LH":[-25,35],"RK":[15,-50],"LK
     def _call_function(self, function_name: str, arguments: Dict[str, Any]) -> Dict:
         import base64
         import io
+
         from PIL import Image
 
         if function_name == "create_animation":

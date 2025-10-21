@@ -2,10 +2,9 @@
 Настройка деплойментов для автоматического пайплайна (Prefect 3.0).
 """
 
-import sys
-import os
 import asyncio
-
+import os
+import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 

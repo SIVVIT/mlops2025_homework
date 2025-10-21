@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Create S3 bucket in MinIO for DVC storage."""
 
+import sys
+import time
+
 import boto3
 from botocore.exceptions import ClientError
-import time
-import sys
 
 
 def wait_for_minio(max_attempts=30):

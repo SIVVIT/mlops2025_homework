@@ -5,17 +5,17 @@ stages:
     deps:
     - path: params.yaml
       hash: md5
-      md5: 2d17c17bff0820a924d99a39a0b0a117
-      size: 109
+      md5: 3f96745fccf7592bc666a940dfca33f4
+      size: 113
     - path: src/get_data.py
       hash: md5
-      md5: d1ce84ee62c6edc5341a844f8188da5e
-      size: 1044
+      md5: 76fdf0db32aa2519f61ca7fb98fdee19
+      size: 1177
     outs:
     - path: data/raw/tips.csv
       hash: md5
-      md5: 565229d1b742e986c3493675abca60e7
-      size: 191
+      md5: 5c653f24685e5f4d566ce2f088e21bd7
+      size: 197
   validate_data:
     cmd: python src/validate_data.py
     deps:

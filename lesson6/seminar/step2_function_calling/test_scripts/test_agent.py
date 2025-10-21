@@ -1,7 +1,7 @@
 """Тест Pose Agent с function calling"""
 
-import time
 import base64
+import time
 from pathlib import Path
 
 from src.pose_agent import PoseAgent

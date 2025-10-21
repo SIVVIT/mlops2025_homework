@@ -4,9 +4,10 @@ import sys
 
 sys.path.insert(0, ".")
 
-from src.pose_agent import PoseAgent
 import base64
 from pathlib import Path
+
+from src.pose_agent import PoseAgent
 
 print("🤖 Testing Pose Agent with Function Calling")
 print("=" * 60)

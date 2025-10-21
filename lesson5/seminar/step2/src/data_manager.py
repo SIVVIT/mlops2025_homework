@@ -1,10 +1,11 @@
 """Data management for Continuous Training."""
 
+import logging
+from typing import Any, Dict, Tuple
+
 import numpy as np
 from sklearn.datasets import fetch_covtype
 from sklearn.model_selection import train_test_split
-from typing import Tuple, Dict, Any
-import logging
 
 logger = logging.getLogger(__name__)
 

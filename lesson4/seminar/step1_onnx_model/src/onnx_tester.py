@@ -1,7 +1,7 @@
-import onnxruntime as ort
 import numpy as np
-from PIL import Image
+import onnxruntime as ort
 import requests
+from PIL import Image
 from transformers import BlipProcessor
 
 

@@ -1,9 +1,10 @@
+import os
+
+import numpy as np
+import torch
+from PIL import Image
 from src.model_converter import BlipONNXConverter
 from src.onnx_tester import ONNXModelTester
-from PIL import Image
-import os
-import torch
-import numpy as np
 
 
 def test_with_real_image():

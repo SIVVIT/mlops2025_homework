@@ -1,6 +1,7 @@
+import os
+
 from src.model_converter import BlipONNXConverter
 from src.onnx_tester import ONNXModelTester
-import os
 
 
 def main():

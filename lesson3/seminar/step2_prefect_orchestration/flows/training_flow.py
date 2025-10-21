@@ -2,22 +2,21 @@
 Основной поток обучения ML модели в Prefect.
 """
 
-import sys
 import os
-
+import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from prefect import flow
 from data_tasks import (
-    load_params,
-    get_raw_data,
-    prepare_batch,
-    merge_batches,
-    preprocess_data,
     create_dvc_tracking_file,
+    get_raw_data,
+    load_params,
+    merge_batches,
+    prepare_batch,
+    preprocess_data,
 )
-from model_tasks import train_model, evaluate_model
+from model_tasks import evaluate_model, train_model
+from prefect import flow
 
 
 @flow(name="ML Training Pipeline", log_prints=True)

@@ -5,13 +5,14 @@
 import json
 import os
 import pickle
-import pandas as pd
+
 import mlflow
 import mlflow.sklearn
+import pandas as pd
 from prefect import task
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, f1_score, classification_report
+from sklearn.metrics import accuracy_score, classification_report, f1_score
+from sklearn.model_selection import train_test_split
 
 
 @task

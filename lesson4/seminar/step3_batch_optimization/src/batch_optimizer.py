@@ -1,12 +1,13 @@
+import os
 import time
+from typing import Dict, Optional, Tuple
+
+import matplotlib.pyplot as plt
 import numpy as np
 import onnxruntime as ort
-from transformers import BlipProcessor
-import psutil
 import pandas as pd
-from typing import Dict, Tuple, Optional
-import os
-import matplotlib.pyplot as plt
+import psutil
+from transformers import BlipProcessor
 
 
 class BatchOptimizer:

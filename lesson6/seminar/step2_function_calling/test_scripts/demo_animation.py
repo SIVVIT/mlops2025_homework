@@ -1,9 +1,10 @@
 """Демонстрация создания анимации без LLM"""
 
-import requests
 import base64
 import io
 from pathlib import Path
+
+import requests
 from PIL import Image
 
 print("🎬 Создание анимаций действий")

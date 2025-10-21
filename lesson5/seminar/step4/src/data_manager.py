@@ -1,10 +1,11 @@
 """Data management for Active Learning."""
 
+import logging
+from typing import Any, Dict, Tuple
+
 import numpy as np
 from sklearn.datasets import load_digits
 from sklearn.model_selection import train_test_split
-from typing import Tuple, Dict, Any
-import logging
 
 logger = logging.getLogger(__name__)
 

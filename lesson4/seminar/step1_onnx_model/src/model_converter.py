@@ -1,9 +1,10 @@
-import torch
-from transformers import BlipProcessor, BlipForConditionalGeneration
 from pathlib import Path
+
 import onnx
-from PIL import Image
 import requests
+import torch
+from PIL import Image
+from transformers import BlipForConditionalGeneration, BlipProcessor
 
 
 class BlipONNXConverter:

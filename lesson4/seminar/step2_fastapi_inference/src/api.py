@@ -1,11 +1,11 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
-from PIL import Image
 import io
-from typing import List
 import os
+from typing import List
+
+from fastapi import FastAPI, File, HTTPException, UploadFile
+from PIL import Image
 
 from .model_service import ONNXImageCaptionService
-
 
 app = FastAPI(
     title="ONNX Image Captioning Service",

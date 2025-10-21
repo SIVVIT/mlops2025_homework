@@ -1,8 +1,9 @@
 """Простая демонстрация без LLM - прямое использование API"""
 
-import requests
 import base64
 from pathlib import Path
+
+import requests
 
 print("🎨 Простая демонстрация Pose API")
 print("=" * 60)

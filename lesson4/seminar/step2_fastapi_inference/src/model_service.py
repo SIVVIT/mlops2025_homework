@@ -1,9 +1,10 @@
-import onnxruntime as ort
+import time
+from typing import Optional
+
 import numpy as np
+import onnxruntime as ort
 from PIL import Image
 from transformers import BlipProcessor
-from typing import Optional
-import time
 
 
 class ONNXImageCaptionService:

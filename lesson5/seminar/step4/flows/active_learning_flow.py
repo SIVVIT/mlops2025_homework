@@ -1,13 +1,13 @@
 """Prefect flow for Active Learning with incremental data addition."""
 
 import logging
-from prefect import flow, task
-from typing import Dict, Any
+from typing import Any, Dict
 
-from src.data_manager import ActiveLearningDataManager
-from src.model_trainer import ModelTrainer
+from prefect import flow, task
 from src.active_learning import ActiveLearningManager
+from src.data_manager import ActiveLearningDataManager
 from src.mlflow_tracker import MLflowTracker
+from src.model_trainer import ModelTrainer
 
 logger = logging.getLogger(__name__)
 

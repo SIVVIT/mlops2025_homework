@@ -2,17 +2,17 @@
 Continuous Training flow using Prefect and MLflow.
 """
 
-import sys
-import os
 import logging
+import os
+import sys
 from pathlib import Path
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from prefect import flow, task
 from data_manager import DataManager
-from model_trainer import ModelTrainer
 from mlflow_tracker import MLflowTracker
+from model_trainer import ModelTrainer
+from prefect import flow, task
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

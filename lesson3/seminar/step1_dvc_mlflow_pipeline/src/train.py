@@ -6,13 +6,14 @@ import json
 import os
 import pickle
 import sys
-import pandas as pd
-import yaml
+
 import mlflow
 import mlflow.sklearn
-from sklearn.model_selection import train_test_split
+import pandas as pd
+import yaml
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, f1_score
+from sklearn.model_selection import train_test_split
 
 
 def load_params():

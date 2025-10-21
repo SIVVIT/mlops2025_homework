@@ -3,15 +3,16 @@ Training script with MLflow tracking for Iris classification.
 """
 
 import random
-from typing import Dict, Any, Tuple
-import yaml
-import numpy as np
-from sklearn.datasets import load_iris
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, f1_score
+from typing import Any, Dict, Tuple
+
 import mlflow
 import mlflow.sklearn
+import numpy as np
+import yaml
+from sklearn.datasets import load_iris
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, f1_score
+from sklearn.model_selection import train_test_split
 
 
 def set_seed(seed: int) -> None:

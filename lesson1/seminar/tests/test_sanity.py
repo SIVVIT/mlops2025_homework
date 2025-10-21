@@ -5,8 +5,7 @@ Sanity tests for the ML pipeline.
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
-
-from src.app.train import set_seed, prepare_data, train_model, evaluate_model
+from src.app.train import evaluate_model, prepare_data, set_seed, train_model
 
 
 def test_accuracy_threshold() -> None:

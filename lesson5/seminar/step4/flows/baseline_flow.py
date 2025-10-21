@@ -1,11 +1,11 @@
 """Prefect flow for baseline model training on full dataset."""
 
 import logging
-from prefect import flow, task
-from typing import Dict, Any
+from typing import Any, Dict
 
-from src.data_manager import ActiveLearningDataManager
+from prefect import flow, task
 from src.baseline_trainer import BaselineTrainer
+from src.data_manager import ActiveLearningDataManager
 from src.mlflow_tracker import MLflowTracker
 
 logger = logging.getLogger(__name__)
