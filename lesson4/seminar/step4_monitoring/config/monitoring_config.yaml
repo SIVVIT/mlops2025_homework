@@ -1,0 +1,36 @@
+service:
+  host: "localhost"
+  port: 8000
+  base_url: "http://localhost:8000"
+
+monitoring:
+  check_interval_seconds: 30
+  samples_per_check: 3
+  request_timeout_seconds: 15
+
+thresholds:
+  response_time_ms:
+    warning: 2000
+    critical: 5000
+  p95_latency_ms:
+    warning: 3000
+    critical: 6000
+  error_rate_percent:
+    warning: 10
+    critical: 25
+  consecutive_failures:
+    warning: 3
+    critical: 5
+
+alerts:
+  enabled: true
+  cooldown_minutes: 5
+
+logging:
+  console_colors: true
+  log_file: "logs/monitoring.log"
+  metrics_file: "logs/metrics.jsonl"
+
+testing:
+  sample_image_path: "../step2_fastapi_inference/test_images/img.jpg"  # реальный путь
+  form_field: "file"
